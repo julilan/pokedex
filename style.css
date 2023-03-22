@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: teal;
+  font-family: "Lato", sans-serif;
+  color: aliceblue;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+h1,
+h2 {
+  margin: 1rem;
+}
+
+.gen_buttons,
+.type_buttons {
+  margin: 1rem 0;
+}
+
+button {
+  padding: 0.4rem 0.8rem;
+  margin: 0.2rem;
+  border: none;
+  border-radius: 45px;
+  background-color: #333;
+  color: inherit;
+  cursor: pointer;
+  box-shadow: 1px 1px 15px rgb(0, 0, 0, 0.7);
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+input {
+  padding: 5px;
+  width: 300px;
+}
+
+li {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  border-radius: 10px;
+  color: inherit;
+  padding: 1rem;
+  filter: sepia(50%);
+}
+
+li:hover {
+  filter: none;
+  scale: 1.1;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 1rem;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Type buttons */
+
+#normal {
+  background-color: #a8a77a;
+}
+
+#fire {
+  background-color: #ee8130;
+}
+
+#water {
+  background-color: #6390f0;
+}
+
+#electric {
+  background-color: #f7d02c;
+}
+
+#grass {
+  background-color: #7ac74c;
+}
+
+#ice {
+  background-color: #96d9d6;
+}
+
+#fighting {
+  background-color: #c22e28;
+}
+
+#poison {
+  background-color: #a33ea1;
+}
+
+#ground {
+  background-color: #e2bf65;
+}
+
+#flying {
+  background-color: #a98ff3;
+}
+
+#psychic {
+  background-color: #f95587;
+}
+
+#bug {
+  background-color: #a6b91a;
+}
+
+#rock {
+  background-color: #b6a136;
+}
+
+#ghost {
+  background-color: #735797;
+}
+
+#dragon {
+  background-color: #6f35fc;
+}
+
+#dark {
+  background-color: #705746;
+}
+
+#steel {
+  background-color: #b7b7ce;
+}
+
+#fairy {
+  background-color: #d685ad;
+}

@@ -16,6 +16,10 @@ Built with:
 
 Live page [here](https://public.bc.fi/s2300103/pokedex)
 
+## Issues
+
+- Search pokemon by name feature not working yet
+
 ## Screenshot
 
 Styling still in progress

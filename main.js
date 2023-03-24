@@ -3,11 +3,9 @@ const typeButton = document.querySelectorAll(".type");
 const genHeading = document.querySelector("h2");
 const search = document.querySelector("input[type=text]");
 
-//let limit = 150;
-// let offset = 0;
 let searchValue = "";
 let pokemonData = [];
-let filterList;
+let filterList = [];
 
 let generations = [
   { limit: 150, offset: 0 },
@@ -30,9 +28,20 @@ function fetchData(limit, offset) {
         return fetch(result.url).then((res) => res.json());
       });
       Promise.all(promisesArray).then((res) => {
-        pokeList(res);
-        //return res;
-      });
+        pokeList(res); // renders the result into HTML <ul class="pokedata">
+        pokemonData = res; // storing the result into pokemonData array
+        
+        // Add eventlistener for typeButtons and filter pokemonData by type
+        typeButton.forEach((btn) => {
+          btn.addEventListener('click', (e) => {
+            //console.log(e.target.name); 
+            filterList = pokemonData.filter(pokemon => pokemon.types[0].type.name == e.target.name);
+            //console.log(filterList);
+            pokeList(filterList); // call the pokeList function to render the filtered list
+          })
+        })
+
+      })
     });
 }
 
@@ -45,15 +54,10 @@ const pokeList = (data) => {
     .join("");
 };
 
-// const filterByType = async () => {
-//   const list = await fetchData();
-//   return list;
-// };
-
-// filterByType().then((list) => console.log(list));
-
+// Eventlistener for generation buttons to call fetchData with corresponding limit and offset
 button.forEach((button, i) => {
-  button.addEventListener("click", () =>
+  button.addEventListener("click", () => {
     fetchData(generations[i].limit, generations[i].offset)
-  );
+    genHeading.textContent = "Pokemons from generation " + (i+1); // Adds heading for fetched generation
+  });
 });

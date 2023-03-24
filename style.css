@@ -64,7 +64,7 @@ li {
   border-radius: 10px;
   color: inherit;
   padding: 1rem;
-  filter: sepia(50%);
+  filter: sepia(30%);
 }
 
 li:hover {

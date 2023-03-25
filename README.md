@@ -22,11 +22,7 @@ Live page [here](https://public.bc.fi/s2300103/pokedex)
 
 ## Screenshot
 
-<img
-  src="images/pokedex_screenshot01.jpg"
-  alt="Pokedex screenshot"
-  title="Screenshot of the current version"
-  style="display: inline-block; margin: 0 auto; max-width: 400px">
+![Screenshot of the current version](images/pokedex_screenshot01.jpg)
 
 ## Sources
 

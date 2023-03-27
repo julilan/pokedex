@@ -41,12 +41,24 @@ function fetchData(limit, offset) {
           })
         })
 
+        const searchPokemon = (e) => {
+          searchValue = e.target.value;
+          filterList =
+            searchValue.length >= 0
+              ? pokemonData.filter((pokemon) => {
+                  return pokemon.name.toLowerCase().includes(searchValue);
+                })
+              : pokemonData;
+          pokeList(filterList);
+        }
+        search.addEventListener('input', searchPokemon); // Eventlistener for search field
+
       })
     });
 }
 
 const pokeList = (data) => {
-  console.log(data);
+  //console.log(data);
   document.querySelector(".pokedata").innerHTML = data
     .map((item, i) => {
       return `<li><img src="${item.sprites.other["official-artwork"].front_default}"/> ${item.name} <br>${item.types[0].type.name}</li>`;

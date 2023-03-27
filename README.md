@@ -16,10 +16,6 @@ Built with:
 
 Live page [here](https://public.bc.fi/s2300103/pokedex)
 
-## Issues
-
-- Search pokemon by name feature not working yet
-
 ## Screenshot
 
 ![Screenshot of the current version](images/pokedex_screenshot01.jpg)
@@ -33,7 +29,7 @@ Live page [here](https://public.bc.fi/s2300103/pokedex)
 
 ### Pokedex
 
-- Margit Tennosaar (GitHub @margittennosaar): how to get generations from pokemon endpoint, initial help with fetchData and pokeList
+- Margit Tennosaar (GitHub @margittennosaar): how to get generations from pokemon endpoint, initial help with fetchData and pokeList, hint for searchPokemon
 
 ## Authors and acknowledgment
 

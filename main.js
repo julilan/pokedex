@@ -34,10 +34,9 @@ function fetchData(limit, offset) {
         // Add eventlistener for typeButtons and filter pokemonData by type
         typeButton.forEach((btn) => {
           btn.addEventListener('click', (e) => {
-            //console.log(e.target.name); 
             filterList = pokemonData.filter(pokemon => pokemon.types[0].type.name == e.target.name);
-            //console.log(filterList);
             pokeList(filterList); // call the pokeList function to render the filtered list
+            search.value = "";
           })
         })
 
@@ -58,7 +57,6 @@ function fetchData(limit, offset) {
 }
 
 const pokeList = (data) => {
-  //console.log(data);
   document.querySelector(".pokedata").innerHTML = data
     .map((item, i) => {
       return `<li><img src="${item.sprites.other["official-artwork"].front_default}"/> ${item.name} <br>${item.types[0].type.name}</li>`;
@@ -69,7 +67,8 @@ const pokeList = (data) => {
 // Eventlistener for generation buttons to call fetchData with corresponding limit and offset
 button.forEach((button, i) => {
   button.addEventListener("click", () => {
-    fetchData(generations[i].limit, generations[i].offset)
+    fetchData(generations[i].limit, generations[i].offset);
     genHeading.textContent = "Pokemons from generation " + (i+1); // Adds heading for fetched generation
+    search.value = "";
   });
 });

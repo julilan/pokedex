@@ -1,15 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: pokemonFont;
+  src: url(./assets/PKMN_RBYGSC.ttf);
+}
+
 body {
-  background-color: teal;
-  font-family: "Lato", sans-serif;
-  color: aliceblue;
+  background: url(./images/pokemon-trophy-in-the-grass-wallpaper-1920x1080-wallpaper.jpeg) no-repeat fixed center;
+  font-family: pokemonFont;
+  color: white;
 }
 
 main {
@@ -47,29 +50,33 @@ button {
 }
 
 input {
-  padding: 5px;
-  width: 300px;
+  padding: 12px;
+  width: 280px;
+  border-radius: 10px;
+  border: none;
+  margin: 1rem;
 }
 
 li {
-  background-color: #333;
+  /* Created with https://www.css-gradient.com */
+  background: #27796D;
+  background: -webkit-linear-gradient(bottom right, #27796D, #0C373D);
+  background: -moz-linear-gradient(bottom right, #27796D, #0C373D);
+  background: linear-gradient(to top left, #27796D, #0C373D);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 1rem;
   text-transform: uppercase;
-  font-weight: 700;
   font-size: 12px;
   border-radius: 10px;
   color: inherit;
   padding: 1rem;
-  filter: sepia(30%);
 }
 
 li:hover {
-  filter: none;
-  scale: 1.1;
+  transform: scale(1.1);
 }
 
 ul {
@@ -161,4 +168,40 @@ img {
 
 #fairy {
   background-color: #d685ad;
+}
+
+@media (max-width:378px) {
+
+  body {
+    background-size: cover;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 14px;
+  }
+  
+  input, button {
+    font-size: 10px;
+  }
+
+  h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  li {
+    margin: 0.5rem;
+    font-size: 8px;
+  }
+
+  img {
+    width: 75px;
+    height: 75px;
+    padding: 0.5rem;
+  }
+
 }

@@ -41,7 +41,7 @@ function fetchData(limit, offset) {
         })
 
         const searchPokemon = (e) => {
-          searchValue = e.target.value;
+          searchValue = e.target.value.toLowerCase();
           filterList =
             searchValue.length >= 0
               ? pokemonData.filter((pokemon) => {

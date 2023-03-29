@@ -31,7 +31,7 @@ Live page [here](https://public.bc.fi/s2300103/pokedex)
 
 - Margit Tennosaar (GitHub @margittennosaar): how to get generations from pokemon endpoint, initial help with fetchData and pokeList, hint for searchPokemon
 
-- Font: [PKMN RBYGSC](https://www.dafont.com/pkmn-rbygsc.font/), the font used in the GB Pokémon games Red/Blue/Yellow/Gold/Silver/Crystal.
+- Font: [PKMN RBYGSC](https://www.dafont.com/pkmn-rbygsc.font), the font used in the GB Pokémon games Red/Blue/Yellow/Gold/Silver/Crystal.
 
 ## Authors and acknowledgment
 

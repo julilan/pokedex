@@ -1,8 +1,8 @@
 # Pokedex
 
-Pokedex built from [pokeapi.co](https://pokeapi.co/)
+Pokedex built with [pokeapi.co](https://pokeapi.co/)
 
-The goal of this project is to learn how to fetch data from an API, in this case PokeAPI, and how to deal with that response to display it on HTML page and filter it by different options.
+The goal of this project is to learn how to fetch data with the use of an API, in this case PokeAPI, and how to deal with that data response to display it on the HTML page and filter it by different options.
 
 ## Technologies used
 

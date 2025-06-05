@@ -14,7 +14,7 @@ Built with:
 
 ## Setup and usage
 
-Live page [here](https://public.bc.fi/s2300103/pokedex)
+[Live page](https://pokedex-julilans-projects.vercel.app/)
 
 ## Screenshot
 
